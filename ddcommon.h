@@ -1,4 +1,4 @@
-/* 1.0.0 VERSION */
+/* 1.1.0 VERSION */
 
 #ifndef ddcommon_h
 #define ddcommon_h
@@ -18,5 +18,7 @@ void writeToSerial(int, bool);
 void writeToSerial(unsigned int, bool);
 
 void writeToSerial(double, bool);
+
+bool myDelay(uint32_t, unsigned long *);
 
 #endif
