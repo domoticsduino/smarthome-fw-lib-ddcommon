@@ -62,14 +62,3 @@ void writeToSerial(double msg, bool nl)
 			Serial.println();
 	}
 }
-
-bool myDelay(uint32_t ms, unsigned long *startMillis)
-{
-	bool ret = true;
-	unsigned long currentMillis = millis();
-	if (currentMillis - *startMillis < ms)
-		ret = false;
-	else
-		*startMillis = currentMillis;
-	return ret;
-}

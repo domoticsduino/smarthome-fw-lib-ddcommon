@@ -19,6 +19,4 @@ void writeToSerial(unsigned int, bool);
 
 void writeToSerial(double, bool);
 
-bool myDelay(uint32_t, unsigned long *);
-
 #endif
